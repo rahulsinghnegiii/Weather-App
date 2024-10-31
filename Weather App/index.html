@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Weather App</h1>
+        </header>
+
+        <section class="search-section">
+            <input type="text" id="cityInput" placeholder="Enter city...">
+            <button id="submitBtn">Search</button>
+            <button id="locationBtn">Use Current Location</button>
+            <label class="unitToggle">
+                <input type="checkbox" id="unitToggle">°F/°C 
+            </label>
+        </section>
+
+        <section class="weather-display">
+            <h2 id="cityName">City: </h2>
+            <div id="weatherInfo">
+                <p id="temperature">Temperature: --°C</p>
+                <img id="weatherIcon" src="" alt="Weather Icon" style="display: none;">
+                <p id="windSpeed">Wind Speed: --</p>
+                <p id="humidity">Humidity: --</p>
+                <p id="visibility">Visibility: --</p>
+                <p id="sunrise">Sunrise: --</p>
+                <p id="sunset">Sunset: --</p>
+            </div>
+        </section>
+
+        <section class="description-section">
+            <h3>Weather Description</h3>
+            <p id="weatherDescription">--</p>
+        </section>
+
+        <section class="error-message" id="errorMsg" style="display: none;">
+            <p>Error: City not found or API issue!</p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

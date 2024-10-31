@@ -1,0 +1,148 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    background: linear-gradient(to bottom, #1b1b1b, #0f0f0f); /* Dark gradient background */
+    color: #ffffff; /* White text for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* App container */
+.app-container {
+    background: rgba(40, 40, 40, 0.8); /* Dark semi-transparent background */
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    border: 3px solid #ff0055; /* Neon pink border */
+}
+
+/* Title styles */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff0055; /* Neon pink color */
+    text-shadow: 0 0 10px rgba(255, 0, 85, 0.7); /* Neon glow effect */
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#cityInput {
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1); /* Light input field with transparency */
+    color: #fff; /* White text */
+    border: 2px solid #00ccff; /* Neon blue border */
+    transition: border-color 0.3s;
+}
+
+#cityInput:focus {
+    border-color: #ff0055; /* Change border color on focus */
+}
+
+.search-section button {
+    padding: 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 25px;
+    background-color: #00ccff; /* Neon blue button color */
+    color: #1b1b1b; /* Dark text color */
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.search-section button:hover {
+    background-color: #00aaff; /* Slightly darker on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 0 15px rgba(0, 204, 255, 0.5); /* Neon glow effect */
+}
+
+/* Weather Display */
+.weather-display {
+    margin-top: 20px;
+    background: rgba(50, 50, 50, 0.7); /* Dark background for the weather display */
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-display h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #00ccff; /* Neon blue color */
+}
+
+#temperature {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff0055; /* Neon pink color */
+}
+
+#weatherDescription {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+
+
+/* Error Message */
+#errorMsg {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.7);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .search-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-section input {
+        width: 100%;
+        margin-bottom: 10px; /* Space between input and button */
+    }
+
+    .search-section button {
+        width: 100%;
+    }
+}
+
+/* Description Section */
+.description-section {
+    margin-top: 20px;
+    background-color: rgba(50, 50, 50, 0.8); /* Dark background for description */
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Soft shadow */
+}
+
+.description-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #00ccff; /* Neon blue color */
+}
